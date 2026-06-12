@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 1 Year 💖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bgMusic" loop>
+    <!-- Optional: put an mp3 in assets/music.mp3 and uncomment below -->
+    <!-- <source src="assets/music.mp3" type="audio/mpeg"> -->
+  </audio>
+
+  <div id="loader" class="loader">
+    <div class="loader-card">
+      <div class="pixel-heart">💖</div>
+      <h1>Loading Relationship Save File...</h1>
+      <div class="bar"><div class="fill"></div></div>
+      <p id="loadingText">Finding cutest memories...</p>
+    </div>
+  </div>
+
+  <div class="floating-layer" id="floatingLayer"></div>
+
+  <main class="app hidden" id="app">
+    <section class="hero card">
+      <div class="badge">Save File: Year 1 Complete ✨</div>
+      <h1>Happy 1 Year Anniversary</h1>
+      <p class="subtitle">To my favorite person in the whole universe 🌙💗</p>
+      <button class="primary-btn" id="startBtn">Press Start 💕</button>
+    </section>
+
+    <section class="card reveal">
+      <h2>Our Little Adventure</h2>
+      <div class="timeline">
+        <div class="moment"><span>🤸🏻</span><p><b>Level 1:</b> Started as my manager that secretly liked me.</p></div>
+        <div class="moment"><span>✨</span><p><b>Level 2:</b> A spark that we never knew would happen.</p></div>
+        <div class="moment"><span>✈️</span><p><b>Level 3:</b> Distance, adventures, and choosing each other anyway.</p></div>
+        <div class="moment"><span>💕</span><p><b>Level 4:</b> One whole year?!</p></div>
+      </div>
+    </section>
+
+    <section class="card reveal">
+      <h2>Photo Memories 📸</h2>
+      <div class="slideshow">
+        <img id="slideImage" src="assets/photos/photo1.jpg" alt="memory photo" />
+      </div>
+      <div class="slide-controls">
+        <button id="prevPhoto">←</button>
+        <span id="photoCount">1 / 6</span>
+        <button id="nextPhoto">→</button>
+      </div>
+    </section>
+
+    <section class="card reveal">
+      <h2>Open When... 💌</h2>
+      <div class="envelopes">
+        <button class="envelope" data-letter="beautiful">You feel beautiful</button>
+        <button class="envelope" data-letter="reassurance">You need reassurance</button>
+        <button class="envelope" data-letter="future">You think about us</button>
+        <button class="envelope" data-letter="weak">You feel weak or tired</button>
+        <button class="envelope" data-letter="afraid">You feel afraid</button>
+        <button class="envelope" data-letter="serve">You feel called to lead or serve</button>
+        <button class="envelope" data-letter="peace">You need a safe place</button>
+      </div>
+      <div class="letter-box" id="letterBox">
+        Tap an envelope, pretty girl 💗
+      </div>
+    </section>
+
+    <section class="card reveal">
+      <h2>Memory Machine 🎀</h2>
+      <p>Tap the button for a random memory.</p>
+      <div class="gacha"💾></div>
+      <button class="primary-btn" id="memoryBtn">Pull a Memory ✨</button>
+      <p class="memory-output" id="memoryOutput">Your memory will appear here...</p>
+    </section>
+
+    <section class="card reveal">
+      <h2>Relationship Stats 🤓</h2>
+      <div class="stats">
+        <div><b id="daysTogether">365</b><span>days together</span></div>
+        <div><b>∞</b><span>times I missed you</span></div>
+        <div><b>1</b><span>favorite person</span></div>
+        <div><b>100%</b><span>my heart</span></div>
+      </div>
+    </section>
+
+    <section class="card reveal">
+      <h2>Achievements Unlocked 🏆</h2>
+      <div class="achievements">
+        <div class="achievement">💞 Survived Year One</div>
+        <div class="achievement">🍔 Professional Big Backs</div>
+        <div class="achievement">🌎 Long Distance Warrior</div>
+        <div class="achievement">🎥 My Movie Duo</div>
+        <div class="achievement">👑 Top Wife Prospect</div>
+      </div>
+    </section>
+
+    <section class="card final-card reveal">
+      <h2>Final Surprise</h2>
+      <p>Only press this if you're ready for maximum cheesiness.</p>
+      <button class="primary-btn" id="finalBtn">Open Final Surprise 💖</button>
+      <div id="finalMessage" class="final-message hidden">
+        <h2>I love you.</h2>
+        <p>
+          Synaya, we never knew this would be our life a year and a half ago, but I am soooo glad that this is our life now. You are the best thing that God has ever given me. You're always so sweet to me and you treat me like I'm the most special person in the whole wide world. Even when I'm being a meanie pants you still treat me with so much love even if it's like leaving the restraunt just to pick me up and have dinner with you or if it's grabbing food and surprising me with it or if it's just being in the room while I play the game. You're trult my safe space and I get all of you and you get all of me. 
+        </p>
+        <p>This is only one year of our movie. Many more sequels to come! 🎬</p>
+      </div>
+    </section>
+  </main>
+
+  <canvas id="confettiCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
